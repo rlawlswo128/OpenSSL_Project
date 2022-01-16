@@ -58,8 +58,14 @@ int main() {
 		/* SSL Ãâ·Â */
 		char output[4096] = { 0 };
 		int length = wsprintfA(output, "[Echo]: %s\n", input);
-		SSL_write(ssl, output
+		SSL_write(ssl, output, length);
+
+		SSL_free(ssl);
+		closesocket(fd);
 	}
+	SSL_CTX_free(sslContext);
+
+	close();
 
 	system("pause");
 	return 0;

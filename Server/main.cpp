@@ -40,7 +40,7 @@ int main() {
 	SSL_CTX_set_options(sslContext, SSL_OP_SINGLE_DH_USE);
 
 	/* 공개키와 개인키 초기화 */
-	SSL_CTX_use_certificate_file(sslContext, "./cert,pem", SSL_FILETYPE_PEM);
+	SSL_CTX_use_certificate_file(sslContext, "./cert.pem", SSL_FILETYPE_PEM);
 	SSL_CTX_use_PrivateKey_file(sslContext, "./Key.pem", SSL_FILETYPE_PEM);
 
 	while (true) {

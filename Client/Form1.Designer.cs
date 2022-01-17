@@ -45,7 +45,7 @@ namespace Client
             // 
             // messageText
             // 
-            this.messageText.Location = new System.Drawing.Point(58, 267);
+            this.messageText.Location = new System.Drawing.Point(62, 183);
             this.messageText.Name = "messageText";
             this.messageText.Size = new System.Drawing.Size(159, 41);
             this.messageText.TabIndex = 1;

@@ -41,7 +41,7 @@ namespace Client
             messageText.Text = Encoding.ASCII.GetString(buf, 0, length);
         }
 
-        private bool validateCertificate(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrirs)
+        private bool validateCertificate(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
         {
             return true;
         }
